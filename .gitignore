@@ -1,0 +1,38 @@
+# Fichiers Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Fichiers d'environnement
+.env
+.env.local
+.env.development
+.env.production
+
+# Fichiers générés ou temporaires
+*.log
+*.tmp
+*.bak
+
+# Fichiers de build ou caches
+dist/
+build/
+coverage/
+
+# Fichiers spécifiques à l'IDE
+.vscode/
+.idea/
+*.swp
+
+# Fichiers de base de données locaux (dumps ou configurations sensibles)
+dump.sql
+*.sql
+mysql-data/
+
+# Fichiers de test ou rapports locaux
+test-reports/
+coverage/
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
