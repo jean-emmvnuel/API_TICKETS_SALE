@@ -1,12 +1,15 @@
 const express = require("express");
 const cors = require("cors");
-const userRoutes = require("./routes/authRoutes"); // ✅ bon chemin
+const authRoutes = require("./routes/authRoutes");
+const eventRoutes = require("./routes/eventRoutes")
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/auth', userRoutes); // ✅ bon prefixe
+app.use('/api/auth', authRoutes); 
+app.use("/api/events", eventRoutes)
 app.get('/', (req, res) => {
     res.send('API Tickets Sale running 🚀');
 });
